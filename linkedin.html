@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://kit.fontawesome.com/312715cfa4.js" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width", initial-scale=" 1.0">
+	<link rel="icon" href="https://i.postimg.cc/ZBV7x3QY/icons8-linkedin-48.png">
+	<title>linkedin</title>
+	<style> 
+
+.first-block-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.first-block-list li {
+  float: left;
+}
+
+.first-block-list li a {
+  display: block;
+  margin-right: 10px;
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.first-block-list li i {
+	font-size: 30px;
+}
+#new:hover {
+	border-radius: 35px;
+	color: black;
+	background-color: gray;
+	opacity: 0.5;
+	padding: 5px;
+
+}
+li#signin {
+	color: rgb(0, 119, 181);
+	 border: 2px solid rgb(0, 119, 181); 
+	 padding: 15px; border-radius: 30px; 
+	 font-size:25px;
+}
+li#signin:hover {
+	background-color: rgb(210,210,210);
+}
+.content {
+	float: right;
+	display: flex;
+	align-items: center;
+}
+.first-img {
+	width: 800px;
+	height: 800px;
+	margin-right: 0;
+	margin-top: -350px;
+	border-top-left-radius: 50%;
+	overflow: hidden;
+
+}
+
+label {
+	margin-left: 10vh;
+	color: rgb(29,29,29);
+	font-size: 18px;
+}
+
+input[type=text] ,input[type=password] {
+	margin-left: 10vh;
+	width: 400px;
+	padding: 16px 20px;
+	border-radius: 5px;
+	border:1px solid black;
+	display: inline-block;
+	font-size: 18px;
+
+}
+.input-hover:hover {
+	background-color: rgb(249,249,249);
+	border:2px solid black;
+
+}
+.input-focus:focus {
+	background-color: rgb(249,249,249);
+	border:2px solid black;
+	outline: none;
+}
+#forgot {
+	margin-left: 10vh;
+	color: rgb(0, 119, 181);
+	font-size: 20px;
+
+}
+input[type=button] {
+	margin-left: 10vh;
+	background-color: rgb(0, 119, 181) ;
+	padding: 16px 20px;
+	width: 420px;
+	border:none;
+	border-radius: 22px;
+	color: white;
+	font-size: 20px;
+}
+input[type=button]:hover {
+	background-color: #1681ff;
+	cursor: pointer;
+}
+.line-with-text {
+	display: flex;
+	margin-left: 10vh;
+	align-items: center;
+	width: 420px;
+}
+.line {
+	flex-grow: 1;
+    height: 1px;
+    background-color: #ccc; 
+}
+.text {
+	margin:0 10px;
+	font-size: 14px;
+	color: #555;
+}
+p#new-to {
+	margin-left: 10vh;
+	border:1px solid black;
+	width: 400px;
+	border-radius: 22px;
+	padding: 12px 16px;
+	text-align: center;
+	font-size: 20px;
+}
+#new-to:hover {
+	background-color: #eee;
+	cursor: pointer;
+}
+* {
+	box-sizing: border-box;
+}
+.box {
+	float: left;
+  width: 60%;
+  padding: 50px;
+  height: 306px;
+  background-color: rgb(231,231,231);
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+.para-for-secnd-block {
+	width: 100%;
+	padding-bottom:20px;
+	background-color: rgb(231,231,231);
+	float: left;
+	border:none;
+}
+.para-for-secnd-block p {
+    margin-right: 20px;
+}
+.scnd-block-list {
+	list-style: none;
+	margin-left:30px;
+}
+.scnd-block-list li {
+	float: left;
+	border: 2px solid black;
+	border-radius: 35px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+.scnd-block-list li a {
+	display:block;
+	color: black;
+	text-align: center;
+	padding: 15px ;
+	font-size: 20px;
+	text-decoration: none;
+}
+.scnd-block-list li:hover {
+	background-color: #ccc;
+	cursor: pointer;
+}
+.third-block {
+	display: flex;
+	align-items: center;
+}
+.third-block.para {
+	color: #555;
+	margin-left: 10vh;
+	margin-bottom: 20vh;
+	font-size: 45px;
+}
+.third-bloch-list {
+	display: flex;
+	flex-wrap:wrap; 
+	list-style: none;
+}
+.third-block-list li {
+	margin-top: 10px;
+	margin-right: -240px;
+	margin-left: 250px;
+	float: left;
+	border: 2px solid black;
+	border-radius: 44px;
+	list-style-type: none;
+	padding: 16px;
+}
+.third-block-list li a {
+	color: #666;
+	text-align: center;
+	text-decoration: none;
+	font-size: 22px;
+}
+.third-block-list li:hover {
+	background-color: #eee;
+}
+* {
+	box-sizing: border-box;
+}
+.fourth-para {
+	float: left;
+	width: 40%;
+	padding: 50px;
+	height: 300px;
+	background-color:#F9F6F0;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+  .fifth-block {
+  	background-color: #eee;
+  	margin-top: -5vh;
+  	width: 100%;
+  	padding:400px 70px 350px 90px;
+	}
+	#image {
+		float: right;
+		margin-top: -160px;
+		margin-right: 210px;
+		border-radius:100%;
+		background:url(https://i.postimg.cc/94JBMP72/Linkedin-Banner.jpg);
+		background-repeat: no-repeat; 
+  		background-size: cover;
+		width: 450px;
+		height: 450px;
+	}
+	.sixth-block {
+		float: left;
+		width: 40%;
+		padding: 200px 0 80px 100px;
+
+	}
+	.sixth-block img {
+		width: 500px;
+		height: 450px;
+	}
+	#find {
+		border: 2px solid #666;
+		border-radius: 33px;
+		text-align: center;
+		font-size: 20px;
+		padding: 14px;
+		width: 250px;
+	}
+	#find:hover {
+		background-color: #ccc;
+		cursor: pointer;
+	}
+	.dropdown {
+		position: relative;
+		display: inline-block;
+		padding-left:110px;
+	}
+	.dropbutton {
+		color: #333;
+		border:2px solid #ddd;
+		border-radius: 5px;
+		background-color: white;
+		font-size: 22px;
+		padding: 15px;
+		cursor: pointer;
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		min-width: 79%;
+		overflow: auto;
+		max-height: 350px;
+		border: 2px solid #ddd;
+		border-radius: 5px;
+		background-color: #fff;
+		border-bottom: 10px solid #ddd;;
+		z-index: 1;
+
+	}
+	.dropdown-content a {
+		color: #111;
+		padding: 12px 16px;
+		font-size: 23px;
+		text-decoration: none;
+		display: block;
+	}
+	.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropbutton:hover {
+background-color: #ddd;
+}
+.dropdown-content a:hover {
+	text-decoration: underline;
+	text-decoration-color:rgb(0, 119, 181);
+}
+div#seventh {
+	background-color: #eee;
+	width: 50%;
+	padding: 200px 0 200px 100px;
+}
+.image2 img {
+	float: right; 
+	position: relative;
+	margin-top: 100px; 
+	width: 700px; 
+	height: 800px; 
+	right: -5%;
+	border-radius: 50% 40% 40% 50% 
+}
+p#seventh2 a {
+	display: block;
+	border:none;
+	background-color: #DCDBDA;
+	width: 450px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #222;
+	padding: 21px;
+}
+p#seventh2 a:hover {
+	background-color: #ccc;
+}
+div#youtube {
+	display: inline-block;
+	position: absolute;
+	float:left;
+	width: 70%;
+	left: 30%;
+	background-color:#F1FAFC;
+	margin-top: 100px;
+	padding:300px 0px 300px 470px; 
+	z-index: -1;
+}
+div#image8 {
+	border:none;
+	margin-top: 300px;
+	background-image: url(https://i.postimg.cc/7GPnrzxh/Shutterstock-2129615045.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 800px;
+}
+div#image8 p {
+	margin-left: 30vh;
+	border:2px solid rgb(0, 119, 181);
+	border-radius: 30px;
+	background-color: rgb(0, 119, 181);
+	padding: 16px;
+	color: white;
+	text-align: center;
+	width: 150px;
+
+}
+div#list {
+	display: flex;
+	position: relative;
+	background-color: #eee;
+	width: 100%;
+	height: 500px;
+
+}
+div#list ul {
+	float: left;
+	margin-left: 50vh;
+	padding: 30px 0 90px;
+	list-style: none;
+}
+div#list ul li {
+	color: #333;
+	padding: 4px; 
+	font-size: 19px;
+	text-transform: capitalize;
+
+}
+footer {
+	display: flex;
+	margin-left: 10vh;
+}
+footer ul {
+	list-style: none;
+}
+footer ul li {
+	float: left;
+	font-size: 17px;
+	margin-left: 35px;
+	color: #666;
+	text-transform: capitalize;
+}
+
+</style>
+
+
+</head>
+
+<body style="overflow-x: hidden;">
+	<div>
+	<h1><a href="https://www.linkedin.com/home" style="color: rgb(0, 119, 181); font: 40px 'Proxima Nova', sans-serif;margin-left: 10vh; text-decoration: none;">Linked<span style="color: white; background-color: rgb(0, 119, 181); border: none; border-radius: 5px;  font-family: 'Fjalla One', sans-serif; margin-left: 3px;">in</span></a></h1>
+		<ul class="first-block-list" style="display: inline; float: right; margin-top: -70px; list-style-type: none; width: 750px">
+		<li><a href="https://www.linkedin.com/pulse/topics/home/?trk=guest_homepage-basic_guest_nav_menu_articles" style="text-decoration: none; text-align: center; color: gray;"><i class="fa-solid fa-newspaper" ></i><br>Article</a></li>
+		<li><a href="https://www.linkedin.com/pub/dir/+/+?trk=guest_homepage-basic_guest_nav_menu_people&original_referer=https%3A%2F%2Fwww.linkedin.com%2Fhome%3Foriginal_referer%3Dhttps%253A%252F%252Fwww.linkedin.com%252Ffeed%252F%253Ftrk%253Dguest_homepage-basic_google-one-tap-submit" style="text-decoration: none; text-align: center; color: gray;"><i class="fa-solid fa-users"></i><br>People</a></li>	
+		<li></li>
+		<li><a href="https://www.linkedin.com/learning/search?trk=guest_homepage-basic_guest_nav_menu_learning"><i class="fa-solid fa-chalkboard"></i><br>Learning</a></li>
+		<li style="border-right:1px solid gray;"><a href="https://www.linkedin.com/jobs/search?trk=guest_homepage-basic_guest_nav_menu_jobs&position=1&pageNum=0"><i class="fa-solid fa-bag-shopping"></i><br>Jobs</a></li>
+		<li id="new"><a href="https://www.linkedin.com/signup?trk=guest_homepage-basic_nav-header-join" style="font-size: 25px; color: black;">join now</a></li>
+		<li id="signin">sign in</li>
+
+		</ul>
+	</div>
+	<div>
+		<p style="margin-left: 10vh; margin-top: 20vh; font-size: 300%; font-family: 'Fauna One', serif; color:brown; font-weight: thick;" >
+			stay on the top of the latest <br>
+		news, insights, and <br>
+		industry trend <br>
+		</p>
+	</div>
+		<div class="content">
+			<img src="https://i.postimg.cc/wRVgM4qV/608d3527921b73b71b01784f65864ffa.jpg" alt="lap" class="first-img">
+		</div>
+		
+		
+		<div>
+		<form>
+			<label for="Email">Email or phone</label><br><br>
+			<input type="text" id="Email" name="email" class="input-hover input-focus"><br><br>
+			<label for="pwd">Password</label><br><br>
+			<input type="Password" id="Password" name="Password" class="input-hover input-focus">
+		</form><br>
+		<p id="forgot">Forgot Password?</p>
+		<form>
+			<input type="button" name="button" value="sign in">
+		</form><br></div>
+		<div class="line-with-text">
+			<div class="line"></div>
+			<div class="text">OR</div>
+			<div class="line"></div>
+		</div>
+		<p id="new-to">New to Linkedin? join now</p><br><br>
+		<div class="clearfix">
+		<div class="para-for-secnd-block" style="width: 40%">
+			<p style="font-size: 45px; margin-left: 10vh;">
+				Explore collaborative <br>
+				articles
+			</p>
+			<p style="font-size: 21px; margin-left: 10vh; color: rgb(80,80,80);">
+				We're unlocking community knowledge in a new <br>
+				way. Experts add insight directly into each <br>
+				article, started with the help of AI. 
+			</p></div>
+			<div class="box">
+			<ul class="scnd-block-list">
+				<li style="width: 150px;"><a href="https://www.linkedin.com/pulse/topics/marketing-s2461/">Marketing</a></li>
+				<li style="width: 250px"><a href="https://www.linkedin.com/pulse/topics/public-administration-s3697/">Public administration</a></li>
+				<li  style="width: 200px"><a href="https://www.linkedin.com/pulse/topics/employee-training-s1430/">
+				Employee Training</a></li>
+				<li style="width: 160px"><a href="https://www.linkedin.com/pulse/topics/healthcare-s282/">Healthcare</a></li>
+				<li style="width: 170px;"><a href="https://www.linkedin.com/pulse/topics/engineering-s166/">Engineering</a></li>
+				<li><a href="https://www.linkedin.com/pulse/topics/talent-management-s993/">Talent management</a></li>
+				<li style="width: 200px;"><a href="https://www.linkedin.com/pulse/topics/it-services-s57547/">IT Services</a></li>
+				<li style="width: 250px"><a href="https://www.linkedin.com/pulse/topics/business-administration-s50111/">Bussiness administration</a></li>
+				<li style="width: 220px;"><a href="https://www.linkedin.com/pulse/topics/telecommunications-s314/">Telecommunications</a></li>
+				<li style="border: 2px solid rgb(0, 119, 181)"><a href="https://www.linkedin.com/pulse/topics/home/" style="color:rgb(0, 119, 181); text-align: center; padding: 15px; ">Show all</a></li>
+			</ul>
+		</div>	
+		</div>
+		<div class="third-block">
+			<div class="third-block para">
+			Find the right job or <br>
+			internship for you
+		</div>
+		<div class="third-block-list">
+			<h3 style="margin-left: 300px; margin-top: 10vh; color: #666;">SUGGESTED SEARCHES</h3>
+			<ul class="third-block-list">
+				<li style="width: 150px;"><a href="https://www.linkedin.com/jobs/engineering-jobs-kanayannur?trk=homepage-basic_suggested-search&position=1&pageNum=0">Engineering</a>
+				</li>
+				<li><a href="https://www.linkedin.com/jobs/business-development-jobs-kanayannur?trk=homepage-basic_suggested-search&position=1&pageNum=0">Business Development</a></li>
+				<li><a href="https://www.linkedin.com/jobs/finance-jobs-kanayannur?trk=homepage-basic_suggested-search&position=1&pageNum=0">Finance</a></li>
+				<br>
+				<li><a href="https://www.linkedin.com/jobs/administrative-assistant-jobs-kanayannur?trk=homepage-basic_suggested-search&position=1&pageNum=0">Administrative Assistent</a></li>
+				<li><a href="https://www.linkedin.com/jobs/retail-associate-jobs-kanayannur?trk=homepage-basic_suggested-search&position=1&pageNum=0">Retail Associate</a></li>
+				<li><a href="https://www.linkedin.com/jobs/customer-service-jobs-kanayannur?trk=homepage-basic_suggested-search&position=1&pageNum=0">Customer Service</a></li>
+				<br>
+				<li><a href="https://www.linkedin.com/jobs/operations-jobs-kanayannur?trk=homepage-basic_suggested-search&position=1&pageNum=0">Operation</a></li>
+				<li><a href="https://www.linkedin.com/jobs/information-technology-jobs-kanayannur?trk=homepage-basic_suggested-search&position=1&pageNum=0">Information Technology</a></li>
+				<li><a href="https://www.linkedin.com/jobs/marketing-jobs-kanayannur?trk=homepage-basic_suggested-search&position=1&pageNum=0">Marketing</a></li>
+				<br>
+				<li><a href="https://www.linkedin.com/jobs/human-resources-jobs-kanayannur?trk=homepage-basic_suggested-search&position=1&pageNum=0">Human Resources</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="clearfix">
+		<div>
+			<p class="fourth-para" style="font-size: 40px; padding: 90px; color: #970C10;">
+			post your job for millions <br>
+			of people to see
+		</p>
+		</div>
+		<div class="fourth-para" style="background-color:#F9F6F0; width: 60%; margin-top: 40px;">
+		<p style="margin-top: 60px; margin-left:60px; border: 2px solid rgb(0, 119, 181); border-radius: 33px; color: rgb(0, 119, 181); font-size: 22px; width: 130px; text-align: center; padding: 10px;">
+		Post job</p>
+		</div>
+	</div>
+	<div class="fifth-block">
+		<p id="image"></p>
+		<p style="margin-top: -90px; font-size: 45px; color: #7A3E26;">Let the right people know you’re<br>open to work</p>
+		<p style="margin-top: -30px; text-transform: capitalize; font-size: 30px; color: #333;">With the open to work feature, you can<br> privately tell recuiters or puvlicly share with <br>the Linkdin community that you are<br> looking for new job opertunities </p>
+	</div>
+	<div class="clearfix">
+		<div class="sixth-block">
+		<img src="https://i.postimg.cc/FfZc9064/8baf9c56ac8f34374f935667ff5beae6.jpg">
+		<p style="font-size: 40px;">connect with people <br>who can help</p>
+		<p id="find">Find people you know</p>
+	</div>
+	<div class="sixth-block">
+		<img src="https://i.postimg.cc/67J3DT5N/204259c2faa4bd19657d7cd0cdd6dc8a.jpg">
+		<p style=" font-size: 40px; padding-left:110px;">Learn the skill you<br> need to succeed</p>
+		<div class="dropdown">
+			<button class="dropbutton">Choose a topic you want to learn about</button>
+			<div class="dropdown-content">
+				<a href="https://www.linkedin.com/learning/topics/business-analysis-and-strategy?trk=homepage-basic_learning-cta">bussiness analisis and stratergy<br>920+courses</a>
+				<a href="https://www.linkedin.com/learning/topics/business-software-and-tools?trk=homepage-basic_learning-cta">Business softwere and tools<br>2050+courses</a>
+				<a href="https://www.linkedin.com/learning/topics/career-development-5?trk=homepage-basic_learning-cta">Cureer devolopment <br>500+courses</a>
+				<a href="https://www.linkedin.com/learning/topics/customer-service-3?trk=homepage-basic_learning-cta">Customer service<br>190+courses</a>
+				<a href="https://www.linkedin.com/learning/topics/diversity-equity-and-inclusion-dei?trk=homepage-basic_learning-cta">Diversity, Equity, and Inclusion (DEI)<br>240+ courses</a>
+				<a href="https://www.linkedin.com/learning/topics/finance-and-accounting?trk=homepage-basic_learning-cta">Finance and accounting <br>280+courses</a>
+				<a href="https://www.linkedin.com/learning/topics/human-resources-3?trk=homepage-basic_learning-cta">Human resources<br> 460+ courses</a>
+				<a href="https://www.linkedin.com/learning/topics/human-resources-3?trk=homepage-basic_learning-cta">Leadership and management<br>1520+ courses</a>
+				<a href="https://www.linkedin.com/learning/topics/marketing-2?trk=homepage-basic_learning-cta">Marketing<br>910+ courses</a>
+				<a href="https://www.linkedin.com/learning/topics/professional-development?trk=homepage-basic_learning-cta">Profosional Devolopment<br>1450+ courses</a>
+				<a href="https://www.linkedin.com/learning/topics/project-management?trk=homepage-basic_learning-cta">project management<br>430+ courses</a>
+				<a href="https://www.linkedin.com/learning/topics/sales-3?trk=homepage-basic_learning-cta">Sales<br>290+ courses</a>
+				<a href="https://www.linkedin.com/learning/topics/small-business-and-entrepreneurship?trk=homepage-basic_learning-cta">Small busssiness Enterprenship<br>170+courses</a>
+			</div>
+	</div>
+	</div>
+	</div>
+	<div class="image2">
+		<img src="https://i.postimg.cc/TLSwSsqY/3978196fbb273e9b9b833a3ef22e89e6.jpg">
+	<div id="seventh">
+		<div>
+		<p style="color:#970C10; font-size: 50px;">who is linkedin for?</p>
+		<p style="font-size: 45px; margin-top: -50px;">Anyone looking to navigate their<br> professional life.</p>
+		</div>
+			<div>
+			<p id="seventh2"><a href="https://www.linkedin.com/pub/dir/+/+?trk=homepage-basic_brand-discovery_intent-module-firstBtn"> find coworker or classmate</a></p>
+			<p id="seventh2"><a href="https://www.linkedin.com/jobs/jobs-in-kanayannur?trk=homepage-basic_brand-discovery_intent-module-secondBtn&position=1&pageNum=0"> Find new job</a></p>
+			<p id="seventh2"><a href="https://www.linkedin.com/learning/search?trk=homepage-basic_brand-discovery_intent-module-thirdBtn">Find a course or training</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+		<div>
+	
+			<div style="position: relative;">
+				<iframe src="https://youtu.be/0awhUtHt-R0?feature=shared" width="700" height="400" style="margin:300px 0px 90px 200px; border:none; border-radius: 8px;"></iframe>
+				<div id="youtube">
+				<p style="font-size: 40px; color:#970C10;">in it to chase my dream</p>
+				<p style="font-size: 40px;">Check out Gayathri's story of <br>Finding a new job on Linkdin</p>
+			</div>
+		</div>		
+		</div>
+
+		<div>
+		<div id="image8">
+			<h1 style="margin-left: 30vh; color: #555; font-size: 50px;">Join your colleagues, classmates, and friends on<br> LinkedIn.</h1>
+			<p>Get started</p>	
+		</div>
+	</div>
+	</div>
+	<div id="list">
+		<p style="color: rgb(0, 119, 181); font: 30px 'Proxima Nova', sans-serif;margin-left: 10vh; margin-top: 55px; text-decoration: none;">Linked<span style="color: white; background-color: rgb(0, 119, 181); border: none; border-radius: 5px;  font-family: 'Fjalla One', sans-serif; margin-left: 3px;">in</span></p>
+		<ul style="margin-left: 250px;">
+			<li style="color: black; font-size: 22px; padding: 6px;">General</li>
+			<li>Sign up</li>
+			<li>Help center</li>
+			<li>About</li>
+			<li>Press</li>
+			<li>blog</li>
+			<li>careers</li>
+			<li>Devolopers</li>
+			</ul>
+			<ul style="margin-left: 100px;">
+				<li style="color: black; font-size: 22px;">browse Linkdin</li>
+				<li>learning</li>
+				<li>jobs</li>
+				<li>salary</li>
+				<li>mobile</li>
+				<li>services</li>
+				<li>products</li>
+			</ul>
+			<ul style="margin-left: 100px;">
+				<li style="color: black; font-size: 22px; ">bussiness solution</li>
+				<li>talent</li>
+				<li>marketing</li>
+				<li>sales</li>
+				<li>learning</li>
+			</ul>
+			<ul style="margin-left: 100px;">
+				<li style="color: black; font-size: 22px; ">directories</li>
+				<li>member</li>
+				<li>jobs</li>
+				<li>featured</li>
+				<li>learning</li>
+				<li>posts</li>
+				<li>article</li>
+				<li>schools</li>
+				<li>news</li>
+				<li>news letter</li>
+				<li>services</li>
+				<li>products</li>
+				<li>advice</li>
+				<li>people searches</li>
+			</ul>
+			</div>	
+			<footer>
+				<p style=" font: 17px 'Proxima Nova', sans-serif;"><b>Linked<span style="color: white; background-color:black; border: none; border-radius: 5px;  font-family: 'Fjalla One', sans-serif; margin-left: 3px;">in</span></b></p>
+				<ul>
+					<li style="margin-left: -25px;">&copy; 2023</li>
+					<li>about</li>
+					<li>accesbility</li>
+					<li>privacy policy</li>
+					<li>cookie policy</li>
+					<li>copyright policy</li>
+					<li>brand policy</li>
+					<li>guest control</li>
+					<li>community guidlines</li>
+					<li>language</li>
+				</ul>
+			</footer>
+
+
+	
+
+		
+	
+
+
+
+</body>
+</html>
